@@ -7,18 +7,12 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependency directories
 node_modules/
 client/pickup/node_modules/
 api/node_modules/
 
-dist
-dist-ssr
-*.local
-*.env
-.env.local
-.env.*.local
-config/config.env
-
+# Build / cache
 client/pickup/build/
 client/pickup/dist/
 build/
@@ -28,17 +22,18 @@ dist/
 .parcel-cache/
 .next/
 
-api/vendor/
-api/storage/
+# Env / secrets
+.env
+.env.*
+config/config.env
 api/.env
 
-# Editor directories and files
-.vscode/*
+# Editor / OS
+.vscode/
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+
+# Others (coverage, locks, etc.)
+coverage/
+*.tgz
