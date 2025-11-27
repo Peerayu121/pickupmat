@@ -27,11 +27,12 @@ function App() {
       }
     }
     fetchStock();
-  }, [])
+  }, []) // []) คือต้องการให้โหลดครั้งเดียวตอนเริ่ม
 
   if (loading) {
     return <p>Loading...</p>
   }
+
   if (failed) {
     return <p>{failed}</p>
   }
