@@ -1,0 +1,39 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules
+client/pickup/node_modules/
+api/node_modules/
+
+# Build / cache
+client/pickup/build/
+client/pickup/dist/
+build/
+dist/
+.vite/
+.cache/
+.parcel-cache/
+.next/
+
+# Env / secrets
+.env
+.env.*
+config/config.env
+api/.env
+
+# Editor / OS
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+
+# Others (coverage, locks, etc.)
+coverage/
+*.tgz
